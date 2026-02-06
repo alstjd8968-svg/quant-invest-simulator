@@ -1,5 +1,4 @@
 # quant-invest-simulator
 
-Daily-based stock trading simulator.
-Focus on domain-driven design and extensible architecture.
-This project is developed step by step while learning Git, Cursor, and AI-assisted coding.
+A daily stock trading simulator built with a focus on domain-driven design and extensible architecture.
+This project is under active, incremental development as we learn and apply Git, Cursor, and AI-assisted coding.
