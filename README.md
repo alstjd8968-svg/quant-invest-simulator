@@ -75,6 +75,14 @@ This project is designed to simulate and extend toward real-world automated trad
 
 The core architectural principle is a strict separation between decision-making and execution.
 
+Core Architecture
+
+Domain: Account, Order, Market, Strategy
+Service: TradingService, MarketService
+Execution Loop: DailySimulation / AutomatedTradingLoop
+
+Strategy는 시장과 계좌의 스냅샷을 읽어 의사결정(Intent) 만을 반환하며, 실제 주문 생성과 체결 관리는 Service 계층에서 수행된다.
+
 Strategies decide what to do.
 The execution engine decides how and when it is done.
 
@@ -121,7 +129,6 @@ All strategies share a common interface and are interchangeable.
 Execution Layer
 
 The execution layer simulates the role of a brokerage system.
-
 It translates strategy decisions into actual orders, manages:
 
 - Order splitting
